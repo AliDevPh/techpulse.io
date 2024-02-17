@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/update.css">
+        <title>Inventory System - Update Item</title>
+    </head>
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+        
+    </script>
+</head>
+<body class="body">
+    <div class="header">
+
+        <div class="right">
+            <div class="logo-name" onclick="navigateTo('index.html')">TechPulse</div>
+        </div>
+        <div class="left">
+            <div class="home" onclick="navigateTo('index.html')">Home</div>
+            <div class="login" onclick="navigateTo('login.html')">Login</div>
+        </div>
+    </div>
+    <div class="top-text">
+        <div class="top-title">Update Item: </div>
+
+        <div class="form">
+            <div class="container">
+              <label for="item-name"><b>Item Name</b></label>
+              <input type="text" name="item-name" required>
+            </div>
+            <div class="container">
+              <label for="product-id"><b>Product Id</b></label>
+              <input type="password" name="product-id" required>
+            </div>
+            <div class="container">
+                <label for="stock"><b>Stock</b></label>
+                <input type="text" name="stock" required>
+              </div>
+              <div class="container">
+                <label for="prices"><b>Prices ($)</b></label>
+                <input type="password" name="prices" required>
+              </div>
+            
+            <div class="bottom-form">
+              <button class="save">Save</button>
+              <button class="cancel" onclick="navigateTo('index.html')">Cancel</but>
+            </div>
+          </div>
+    </div>
+    <div class="footer">
+      <div class="text-footer" onclick="navigateTo('index.html')">© TechPulse 2024</div>
+  </div>
+</body>
+</html>

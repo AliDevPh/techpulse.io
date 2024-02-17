@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/landingpage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Inventory System</title>
+    </head>
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+        
+    </script>
+</head>
+<body class="body">
+    <div class="header">
+
+        <div class="right">
+            <div class="logo-name" onclick="navigateTo('index.html')">TechPulse</div>
+        </div>
+        <div class="left">
+            <div class="home" onclick="navigateTo('index.html')">Home</div>
+            <div class="login" onclick="navigateTo('login.html')">Login</div>
+        </div>
+    </div>
+    <div class="top-text">
+        <div class="top-title">TechPulse Inventory</div>
+        <div class="bottom-buttons">
+            <button class="add-new-item" onclick="navigateTo('newitem.html')">
+                <i style="font-size:24px" class="fa">&#xf055;</i>
+                Add New Item
+            </button>
+        <button class="logout" onclick="navigateTo('login.html')">
+            <i style="font-size:24px" class="fa">&#xf08b;</i>     
+            Logout
+        </button>
+        </div>
+        <div class="footers">
+            <div class="text-footer" onclick="navigateTo('index.html')">© TechPulse 2024</div>
+        </div>
+</body>
+</html>
